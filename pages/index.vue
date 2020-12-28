@@ -3,7 +3,7 @@
     <div class="ymca">Test</div>
     <div class="animated_logo">
       <div class="front">Dam</div>
-      <div class="back">Dre</div>
+      <div class="side">Dre</div>
       <!-- <div class="logo">Logo [to be replaced by image]</div> -->
     </div>
   </div>

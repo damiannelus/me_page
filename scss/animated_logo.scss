@@ -1,20 +1,30 @@
-.animated_logo{
-    color: $primary;
-    background: $tetradic_close;
+.animated_logo{    
     animation: 10s linear logo-animation;
     animation-iteration-count: infinite;
+    
+    .front {
+        color: $primary;
+        background: $tetradic_close;
+        font-family: "Lucida Console", Monaco, monospace;
+        border: 1px solid black;
+        transform: translateZ(50px);
+    }
+
+    .side {
+        color: $primary;
+        background: $tetradic_far;
+        font-family: "Lucida Console", Monaco, monospace;
+        border: 1px solid black;
+        transform: rotateY(180deg) translateZ(50px);
+    }
 }
 
 @keyframes logo-animation {
     0% {
         transform: scale(0.1);
-        opacity: 0;
-      }
-      60% {
-        transform: scale(1);
-        opacity: 1;
       }
       100% {
-        transform: rotate3d(1, 2.0, 3.0, 10deg);
+        transform: scale(1);
+        transform: rotate3d(1, 1, 1, 30deg) matrix3d(1,0,0,0,0,1,6,0,0,0,1,0,50,100,0,1.1);
     }
 }
